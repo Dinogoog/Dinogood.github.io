@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <meta charset="UTF-8">
+  <title>Imagen Bouncing</title>
+  <style>
+    img {
+      border-radius: 50%;
+      animation: bounce 1s infinite alternate;
+    }
+
+    @keyframes bounce {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(20px);
+      }
+    }
+  </style>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login-page.css">
+  <style>
+    body {
+      background-color: #F8E9D6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+
+    #main-holder {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      width: 400px;
+      text-align: center;
+      position: relative;
+    }
+
+    #login-header {
+      font-size: 2.5rem;
+      color: #FAAFAF;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    #login-error-msg-holder {
+      margin-bottom: 1rem;
+    }
+
+    #login-error-msg {
+      color: #ff2e63;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    #error-msg-second-line {
+      font-weight: normal;
+    }
+
+    .login-form-field {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #F8E9D6;
+      font-size: 1.2rem;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-form-field:focus {
+      outline: none;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #login-form-submit {
+      background-color: #FAAFAF;
+      color: #fff;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      padding: 0.8rem 1.2rem;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: box-shadow 0.3s ease;
+    }
+
+    #login-form-submit:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #login-form-submit:active {
+      transform: scale(0.95);
+    }
+
+    #login-icon {
+      width: 5rem;
+      height: 5rem;
+      position: absolute;
+      top: -2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+  </style>
+</head>
+
+<body>
+  <main id="main-holder">
+   <img src="https://lh3.googleusercontent.com/chat_attachment/AP-RMTvVQSaM-Bx-BM6Gc9IyGLzdJokJKf4Ies8gqow4K8DyyUHo38b2C_FBQT-owTuhUGJrHY--PiqgZnOQ9zqD4fno2NqOpXDQLNS5HwOgqvLTVBLEBrO1-sLmb6hz5AYhNjc3f7y38cXx8Lw3D1lJP68BUOs25lX3mtI1OdTtJ8G_VcQwZgpi4ywd804bbhyNLKLWA1tQCIprM_uBVYWWztE0Fj_h0CasLkBeYgGUXmckXm_YN-UnYRIRuRo3UvILe1T-GG-ozu9b3VBrGMl8VG7eWAcVFs7hG74lREO0BsgDEWOkGWDquDlanDmLGg=w512" alt="Imagen">
+
+    <h1 id="login-header">Welcome back!</h1>
+
+ <div id="login-error-msg-holder">
+      <p id="login-error-msg">Hola <span id="error-msg-second-line">Ingresa please</span></p>
+    </div>
+    
+ <form id="login-form" action="file:///C:/Users/kjsan/OneDrive/Escritorio/Bromita.html">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+  
+  </main>
+</body>
+
+</html
